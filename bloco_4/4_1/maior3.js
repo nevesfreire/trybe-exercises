@@ -1,12 +1,12 @@
 let a = 3;
-let b = 5;
+let b = 11;
 let c = 7;
-if (a>b $$ a>c){
-    return ("a é maior");
+if (a>b && a>c){
+    console.log("a é maior");
 } else if (b>a && b>c){
-    return (b é maior) 
+    console.log ("b é maior") 
 } else if (c>a && c>b){
-    return ("c é maior");
+    console.log("c é maior");
 } else {
-    return ("não há maior");
+    console.log("não há maior");
 }

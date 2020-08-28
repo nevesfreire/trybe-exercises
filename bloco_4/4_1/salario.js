@@ -23,4 +23,4 @@ if( posINSS<=1903.98){
 } else {
     final=posINSS*.725 + 869.36;
 }
-return(final);
+console.log(final);

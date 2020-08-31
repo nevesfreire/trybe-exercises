@@ -1,6 +1,6 @@
 //1 - Fazer quadrado de asteriscos:
 
-let base = 5;
+let base = 8;
 let linha=["*"];
 for (let i=1; i<base;i+=1){
     linha = linha + "*";
@@ -37,3 +37,24 @@ linha="*";
  console.log(linha);
  linha= "*";
    }
+
+// 4 -pirâmide com n asteriscos de base:
+
+//pares
+zeros = base/2
+if (base%2===0){
+
+    
+  for (i=1;i<=base/2;i+=1){
+    
+    console.log(' '.repeat(zeros--) +'**'.repeat(i))
+  }
+}else{
+    
+//ímpares
+    for (i=1;i<=base;i+=1){
+      if (i%2!=0){
+      console.log(' '.repeat(zeros--) +'*'.repeat(i))
+      }
+    }
+}

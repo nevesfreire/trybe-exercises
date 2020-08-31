@@ -64,7 +64,7 @@ if (base%2===0){
 // *   *
 //*******
 
-let espaco =1;
+
 console.log ("exercício 5");
 if(base%2!=0){
     zeros = (base-1)/2;

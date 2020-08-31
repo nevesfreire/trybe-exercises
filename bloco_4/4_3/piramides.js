@@ -1,6 +1,6 @@
 //1 - Fazer quadrado de asteriscos:
 
-let base = 8;
+let base = 7;
 let linha=["*"];
 for (let i=1; i<base;i+=1){
     linha = linha + "*";
@@ -50,11 +50,33 @@ if (base%2===0){
     console.log(' '.repeat(zeros--) +'**'.repeat(i))
   }
 }else{
-    
+
 //ímpares
     for (i=1;i<=base;i+=1){
       if (i%2!=0){
       console.log(' '.repeat(zeros--) +'*'.repeat(i))
       }
     }
+}
+//5 arvore de natal
+//   *
+//  * *
+// *   *
+//*******
+
+let espaco =1;
+console.log ("exercício 5");
+if(base%2!=0){
+    zeros = (base-1)/2;
+    for(let i=1;i<=base;i+=2){
+        if(i==base){    
+            console.log('*'.repeat(base))
+        }else if(i==1){
+            console.log(' '.repeat(zeros--)+ '*')
+        }else 
+            console.log(' '.repeat(zeros--) + '*' + ' '.repeat(i-2)+'*');
+        }
+
+    }else{
+    console.log('Não funciona com base par');
 }

@@ -18,16 +18,22 @@ linha="*";
  }
 
  // 3 - Piramide do outro lado
- linha=" ";
+ linha="*";
  let zeros = base-1
+ 
  for (i=0;i<base;i+=1){
- for (z=0;z<zeros;z+=1){
-     if (z+ zeros<base){
+ 
+    for (z=0;z<zeros;z+=1){
+     
          linha= " " + linha
-     } else {
-         linha = linha + "*"
+     
      }
- }
+    
+    for(j=1;j+zeros <base;j+=1){
+         linha = linha +"*";
+     }
+ 
  zeros-=1;
  console.log(linha);
-}
+ linha= "*";
+   }

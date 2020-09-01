@@ -51,33 +51,34 @@ console.log (positiveNegative(-10));
 console.log (greater3(5,7,9));
 //5 
 function angulos (a, b, c){
-    if (a+b+c=180){
+    if (a+b+c==180){
         return (true);
     } else {
         return (false);
     }
 }
 //6
-function movement (a)
+function movement (a){
 switch (a){
-    case "peon"
+    case "peon":
     return ("Em frente");
     break
-    case "knight"
-    return ("Em L);
+    case "knight":
+    return ("Em L");
     break
-    case "Tower"
+    case "Tower":
     return ("Linha reta");
-    break
-    case "bishop"
+    break;
+    case "bishop":
     return ("diagonals");
-    break
-    case "queen"
+    break;
+    case "queen":
     return ("Todos os lados");
-    break
-    case "king"
+    break;
+    case "king":
     return ("Todos os lados, apenas 1 casa");
     break
+}
 }
 //7
 function grade (nota){
@@ -111,11 +112,11 @@ function impar (a,b,c){
 }
 
 //10 
-function (custo, venda){
+function venda(custo, venda){
 if (custo<0 ||venda<0){
     return("Erro")
 }else{
-    return("Lucro = " 1000*(venda- 1.2*custo));
+    return("Lucro = " + 1000 *(venda- 1.2*custo));
 }
 }
 //11
@@ -135,7 +136,7 @@ if(bruto<=1556.94){
 
 if( posINSS<=1903.98){
     final =posINSS;
-} else if (posINSS<=1903.99){
+} else if (posINSS<=2826.65){
     final=posINSS*.925 + 142.8;
 } else if (posINSS<=3751.05){
     final=posINSS*.85 +354.8;
@@ -144,5 +145,6 @@ if( posINSS<=1903.98){
 } else {
     final=posINSS*.725 + 869.36;
 }
-return(final);
+return("O salário líquido é " + final);
 }
+console.log (salario(3000));

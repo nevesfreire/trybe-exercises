@@ -98,3 +98,51 @@ function grade (nota){
     }
 }
 //8
+function umpar (a,b,c){
+    if (a%2==0 || b%2==0 || c%2==0){
+        return ("pelo menos 1 par");
+    }   
+}
+//9
+function impar (a,b,c){
+    if (a%2!==0 || b%2!==0 || c%2!==0){
+        return ("pelo menos 1 ímpar");
+    }   
+}
+
+//10 
+function (custo, venda){
+if (custo<0 ||venda<0){
+    return("Erro")
+}else{
+    return("Lucro = " 1000*(venda- 1.2*custo));
+}
+}
+//11
+function salario (bruto){
+let posINSS
+let final
+
+if(bruto<=1556.94){
+    posINSS=bruto*.92;
+} else if (bruto<=2594.92){
+    posINSS=bruto*.91;
+} else if (bruto<=5189.82){
+    posINSS=bruto*.89;
+} else{
+    posINSS= bruto-570.88;
+}
+
+if( posINSS<=1903.98){
+    final =posINSS;
+} else if (posINSS<=1903.99){
+    final=posINSS*.925 + 142.8;
+} else if (posINSS<=3751.05){
+    final=posINSS*.85 +354.8;
+} else if (posINSS<=4664.68){
+    final=posINSS*.775 + 636.13;
+} else {
+    final=posINSS*.725 + 869.36;
+}
+return(final);
+}

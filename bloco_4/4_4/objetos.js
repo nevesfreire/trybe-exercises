@@ -124,3 +124,71 @@ function stringEnd (main, ending){
     }
 }
 console.log(stringEnd('fernando', 'nando'));
+
+//Bonus1
+let romano = 'CXCIX'
+//function romanos(a){
+    let valor = 0;
+let tabela={
+    I:1,
+    IV:4,
+    V:5,
+    IX:9,
+    X:10,
+    XL:40,
+    L:50,
+    XC:90,
+    C:100,
+    CD:400,
+    D:500,
+    CM:900,
+    M:1000,
+}
+let a = 'CXL';
+for (let x in a){
+if (a[a.length-1-x] == 'I'){
+    valor = valor + ' 1'
+} else if (a[a.length-1-x]== 'V'){
+    
+    if (a[a.length-2-x] == 'I'){
+        valor = valor + ' 4'
+        x= x+1;
+    }else{
+        valor = valor + ' 5'
+    }
+
+} else if (a[a.length-1-x] == 'X'){
+
+    if (a[a.length-2-x] == 'I'){
+        valor = valor + ' 9'
+        x= x+1;
+    }else{
+        valor = valor + ' 10'
+    }
+
+
+}else if (a[a.length-1-x] == 'L'){
+
+    if (a[a.length-2-x] == 'X'){
+        valor = valor + ' 40'
+        x= x+1;
+    }else{
+        valor = valor + ' 50'
+    }
+
+} else if (a[a.length-1-x] == 'C'){
+
+    if (a[a.length-2-x] == 'X'){
+        valor = valor + ' 90'
+        x= x+1;
+    }else{
+        valor = valor + ' 100'
+    }
+
+}
+}
+
+console.log (valor);
+
+
+

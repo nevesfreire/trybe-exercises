@@ -126,8 +126,8 @@ function stringEnd (main, ending){
 console.log(stringEnd('fernando', 'nando'));
 
 //Bonus1
-let romano = 'CXCIX'
-//function romanos(a){
+
+function romanos(a){
     let valor = 0;
 let tabela={
     I:1,
@@ -144,51 +144,53 @@ let tabela={
     CM:900,
     M:1000,
 }
-let a = 'CXL';
-for (let x in a){
+for (let x = 0;x<a.length; x+=1){
 if (a[a.length-1-x] == 'I'){
-    valor = valor + ' 1'
+    valor +=1;
 } else if (a[a.length-1-x]== 'V'){
     
     if (a[a.length-2-x] == 'I'){
-        valor = valor + ' 4'
+        valor +=4;
         x= x+1;
     }else{
-        valor = valor + ' 5'
+        valor +=5;
     }
 
 } else if (a[a.length-1-x] == 'X'){
 
     if (a[a.length-2-x] == 'I'){
-        valor = valor + ' 9'
+        valor +=9;
         x= x+1;
     }else{
-        valor = valor + ' 10'
+        valor +=10;
     }
 
 
 }else if (a[a.length-1-x] == 'L'){
 
     if (a[a.length-2-x] == 'X'){
-        valor = valor + ' 40'
+        valor +=40;
         x= x+1;
     }else{
-        valor = valor + ' 50'
+        valor +=50;
     }
 
 } else if (a[a.length-1-x] == 'C'){
 
     if (a[a.length-2-x] == 'X'){
-        valor = valor + ' 90'
+        valor +=90;
         x= x+1;
     }else{
-        valor = valor + ' 100'
+        valor +=100;
     }
 
 }
 }
 
 console.log (valor);
+return (valor);
+}
+let a = 'CXCIX'
+console.log("O número " + a+ " em romanos equivale a: "+ romanos(a));
 
-
-
+//bonus 2

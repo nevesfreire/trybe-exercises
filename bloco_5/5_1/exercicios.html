@@ -36,16 +36,23 @@
         <p>Texto padrão do nosso site</p>
         <p>-----</p>
         <p>Trybe</p>
+        <p>Será?</p>
       </div>
     </div>
     <script>
 
-        document.getElementsByTagName('p')[0].innerText = "Formado, empregado e moranod fora do Brasil";
-        document.getElementsByClassName("main-content").style.backgroundColor="rgb(76,164,109)";
-        document.getElementsByClassName("center-content").style.backgroundColor = "white";
-        document.getElementsByTagName("h1").innerText = "Exercício 5.1 Javascript"
-        document.getElementsByTagName("p").style.value = upCase;
-        console.log(document.getElementsByTagName("p"))
+        document.getElementsByTagName('p')[0].innerText = "em 2022";
+        document.getElementsByClassName('main-content')[0].style.backgroundColor="rgb(76,164,109)";
+        document.getElementsByClassName('center-content')[0].style.backgroundColor = "white";
+        document.getElementsByTagName('h1')[0].innerText = "Exercício 5.1 Javascript"
+        
+        //document.getElementsByTagName('p')[0].innerText = upCase; 
+        
+        
+        
+        for (let i in document.getElementsByTagName("p")){
+            console.log(document.getElementsByTagName("p")[i].innerText);
+        }
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:

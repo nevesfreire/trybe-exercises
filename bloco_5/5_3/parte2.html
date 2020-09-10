@@ -53,14 +53,17 @@
     botaoDesconto.addEventListener('click',function(){
       alert ("Desconto de R$" + productPrice*discount +'.' )
     })
-
+    let qualquer
     let foto1 = document.querySelector(".foto1")
-    foto1.addEventListener("mouseover",function(){
+    foto1.addEventListener("mouseover",function(qualquer){
         foto1.src = "foto2.png"
+        console.log(qualquer.type)
     })
-    foto1.addEventListener("mouseleave",function(){
-        foto1.src = "foto1.jpeg"
+    foto1.addEventListener("mouseleave",function (qualquer){
+        foto1.src = "foto1.jpeg";
+        console.log(qualquer.type)
     })
+   
       </script>
       
 

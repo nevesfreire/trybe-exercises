@@ -7,12 +7,7 @@
     <!-- Seu código JavaScript pode vir aqui -->
     <!-- Seu código JavaScript pode vir aqui -->
     <!-- Seu código JavaScript pode vir aqui -->
-     <script>
-        let botao1 = document.querySelector(".botao1");
-        botao1.addEventListener("click", function(){
-            alert ("Você clicou");
-        })
-    </script>
+    
   </head>
   <body>
     <div>
@@ -41,11 +36,34 @@
         exibir um alerta contendo a mensagem "Desconto de R$(resultado)", sendo
         <strong>discount</strong> o resultado da multiplicação.
       </p>
+      <button class="botaoDesconto">Clique aqui para desconto</button>
+
+      <img src="foto1.jpeg" class="foto1">
+ 
+
       <script language="javascript" type="text/javascript">
+        let botao1 = document.querySelector(".botao1");
+        botao1.addEventListener("click", function(){
+            alert ("Você clicou");
+        })
         //JavaScript para a tarefa 2
-        //JavaScript para a tarefa 2
-        //JavaScript para a tarefa 2
+    let productPrice = 59.99;
+    let discount = 0.30
+    let botaoDesconto = document.querySelector(".botaoDesconto");
+    botaoDesconto.addEventListener('click',function(){
+      alert ("Desconto de R$" + productPrice*discount +'.' )
+    })
+
+    let foto1 = document.querySelector(".foto1")
+    foto1.addEventListener("mouseover",function(){
+        foto1.src = "foto2.png"
+    })
+    foto1.addEventListener("mouseleave",function(){
+        foto1.src = "foto1.jpeg"
+    })
       </script>
+      
+
       <hr />
       <h2>Bônus</h2>
       <p>
@@ -62,6 +80,8 @@
         console qual dos eventos acabou de ocorrer.
       </p>
       <!-- Adicione a tag <img /> aqui -->
+  
+      let foto1
     </div>
   </body>
 </html>

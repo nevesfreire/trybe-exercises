@@ -6,7 +6,7 @@
 
   <link rel=stylesheet type="text/css" href="css/bulma-rtl.min.css">
   <link rel=stylesheet type="text/css" href="style.css">
-  
+
  </head>
  <body class="body">
     <form>
@@ -38,25 +38,31 @@
         </div>
     </div>  
 
-    <div class="field">
+   
         <label class="label" for="cidade">Cidade:</label>
         <div class="control">
             <input type="text" name="cidade" id="cidade" required="required" maxlength="28"><br>
         </div>
       </div>
 
+      <div class="field">
+      <label class="label" for="cidade">Estado:</label>
       <div class="select">
         <select name="estados" id="estados" required="required" style= "width: 100px">
         </select>
       </div>
+    </div>
 
+<div>
 
+    <label class="label" for="cidade">Tipo:</label>
       <div class="control">
        
       <label class = "radio" for="casa"><input id="casa"type="radio" name="Tipo"  value= "Casa" required="required">Casa</label><br>
       <label class="radio" for="ap"> <input type="radio" id="ap" name="Tipo"  value= "ap"   required="required"> Apartamento</label><br>
       <label class="radio" for="outros"> <input type="radio" id="outros" name="Tipo"  value= "outro"required="required"> Outro</label>  
 
+    </div>
       </div>
 
 <section class = "section" id="dados-emprego" maxlength="500" style="width: fit-content;"required="required">

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Currículo</title>
+
+  <link rel=stylesheet type="text/css" href="css/bulma-rtl.min.css">
+  <link rel=stylesheet type="text/css" href="style.css">
+  
+ </head>
+ <body class="body">
+    <form>
+    <div class="field">
+        <label class="label"for="name">Nome:</label>
+        <div class="control">
+            <input type="text" name="name" id="name" required="required" maxlength="40"><br>
+        </div>
+      </div>
+
+    <div class="field">
+        <label class="label" for="email">E-mail:</label>
+        <div class="control">
+            <input type="email" name="email" id="email" required="required" maxlength="50"><br>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label" for="cpf">CPF:</label>
+        <div class="control">
+            <input type="text" name="cpf" id="cpf" required="required" maxlength="11"><br>
+        </div>
+      </div>
+
+    <div class="field">
+        <label class="label" for="endereco">Endereço</label>
+        <div class="control">
+            <input type="text" name="endereco" id="endereco" required="required" maxlength="200"><br>
+        </div>
+    </div>  
+
+    <div class="field">
+        <label class="label" for="cidade">Cidade:</label>
+        <div class="control">
+            <input type="text" name="cidade" id="cidade" required="required" maxlength="28"><br>
+        </div>
+      </div>
+
+      <div class="select">
+        <select name="estados" id="estados" required="required" style= "width: 100px">
+        </select>
+      </div>
+
+
+      <div class="control">
+       
+      <label class = "radio" for="casa"><input id="casa"type="radio" name="Tipo"  value= "Casa" required="required">Casa</label><br>
+      <label class="radio" for="ap"> <input type="radio" id="ap" name="Tipo"  value= "ap"   required="required"> Apartamento</label><br>
+      <label class="radio" for="outros"> <input type="radio" id="outros" name="Tipo"  value= "outro"required="required"> Outro</label>  
+
+      </div>
+
+<section class = "section" id="dados-emprego" maxlength="500" style="width: fit-content;"required="required">
+    
+    <label class ="label">Dados do seu último emprego</label>
+
+   
+
+      <div class="field">
+        <label class="label" for="descricao">Descrição do cargo:</label>
+        <div class="control">
+          
+    <textarea class="textarea is-info" name="descricao" id="descricao" cols="30" rows="5" required="required" maxlength="500"></textarea>
+
+        </div>
+      </div>
+
+      <div class="field">
+          
+        <label class ="label" for="data-de-inicio">Data de início:</label>
+        <div class="control">
+            <input type="date" name="data-de-inicio" id="data-de-inicio" required="required" ><br>
+        </div>
+      </div>
+      
+</section>
+
+<div class="buttons">
+    <button class="button is-info is-primary is-outlined" type="submit">Enviar</button>
+  </div>
+</form>
+
+<script src="script.js"></script>
+ </body>
+</html>

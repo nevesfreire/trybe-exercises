@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Currículo</title>
+  <link rel=stylesheet type="text/css" href="style.css">
+ </head>
+ <body class="body">
+<form>
+<label for="name">Nome:</label>
+<input type="text" name="name" id="name" required="required" maxlength="40"><br>
+
+<label for="email">E-mail:</label>
+<input type="email" name="email" id="email" required="required" maxlength="50"><br>
+
+
+<label for="cpf">CPF:</label>
+<input type="text" name="cpf" id="cpf" required="required" maxlength="11"><br>
+
+<label for="endereco">Endereço</label>
+<input type="text" name="endereco" id="endereco" required="required" maxlength="200"><br>
+
+
+<label for="cidade">Cidade:</label>
+<input type="text" name="cidade" id="cidade" required="required" maxlength="28"><br>
+
+
+<label for="estados">Estado:</label>
+<select name="estados" id="estados" required="required" style= "width: 100px">
+
+</select>
+<br>
+    <label for="casa">Casa</label><input id="casa"type="radio" name="Tipo"  value= "Casa" required="required"><br>
+    <label for="ap">Apartamento</label> <input type="radio" id="ap" name="Tipo"  value= "ap"   required="required"><br> 
+    <label for="outros">Outro</label> <input type="radio" id="outros" name="Tipo"  value= "outro"required="required"> 
+
+
+<fieldset id="dados-emprego" maxlength="500" style="width: fit-content;"required="required">
+    
+    <legend>Dados do seu último emprego</legend>
+
+    <label for="cargo">Cargo:</label>
+    <input type="text" name="cargo" id="cargo" required="required" maxlength="40"><br>
+
+
+    <label for="descricao">Descrição do cargo:</label>
+    <textarea  name="descricao" id="descricao" cols="30" rows="5" required="required" maxlength="500"></textarea>
+
+</fieldset>
+
+
+
+<label for="data-de-inicio">Data de início:</label>
+<input type="date" name="data-de-inicio" id="data-de-inicio" required="required" ><br>
+
+
+<button type="submit">Enviar</button>
+</form>
+
+<script src="script.js"></script>
+ </body>
+</html>
+
+
+
+<!-- 
+Tipo - Radio Button
+Casa, Apartamento
+Campo obrigatório
+
+
+Caso alguma das condições for inválida no momento do envio do formulário, exibir mensagem de erro contextualizada.
+Campo obrigatório
+Logo abaixo do formulário, crie um botão que:
+Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault().
+Execute as validações que foram pedidas ao longo da montagem do formulário.
+Monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
+Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também. --> 
